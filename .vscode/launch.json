@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run with test hypergraph",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "/home/jmaillefaud/.pyenv/versions/3.12.6/envs/HyGNN-Env/bin/python",
+            "args": [
+                "--enc_hgraph", "./testgraph/enc.csv",
+                "--dec_hgraph", "./testgraph/dec.csv",
+                "--dec_hedge_lab", "./testgraph/lab.csv",
+            ],
+
+        }
+    ]
+}
